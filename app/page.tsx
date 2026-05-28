@@ -12,12 +12,12 @@ console.log(data)
   return (
     <div className="container">
       <div className="card">
-        <input type="text" placeholder="search..."/>
+        <input className='search' type="text" placeholder="search..."/>
         <img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}/>
-        <p>{data.main.temp} °C</p>
-        <p>{data.name}</p>
-        <p>{data.main.humidity} Humidity</p>
-        <p>{data.wind.speed} km/h Wind Speed</p>
+        <p>Temperature: {data.main.temp} °C</p>
+        <p>City: {data.name}</p>
+        <p>Humidity: {data.main.humidity}</p>
+        <p>Wind Speed: {data.wind.speed} km/h</p>
       </div>
     </div>
     
